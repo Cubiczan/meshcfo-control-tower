@@ -26,15 +26,14 @@ This is MeshCFO-style **ownership**, not free-form advice.
 
 ## Demo video
 
-≤ 3 minute walkthrough for Devpost judges. Say **Nebius Token Factory** and **NVIDIA Nemotron** on camera.
+≤ 3 minute walkthrough (1080p MP4) for Nebius × NVIDIA · Best Apps and Agents:
 
-- **Release:** [v0.1.0-demo](https://github.com/Cubiczan/meshcfo-control-tower/releases/tag/v0.1.0-demo)
-- **Asset:** [`meshcfo-control-tower-demo.mp4`](https://github.com/Cubiczan/meshcfo-control-tower/releases/download/v0.1.0-demo/meshcfo-control-tower-demo.mp4)
-- **Shot list:** [`docs/DEMO.md`](docs/DEMO.md)
+- **Download (Cubiczan):** [meshcfo-control-tower-demo.mp4](https://github.com/Cubiczan/meshcfo-control-tower/releases/download/v0.1.0-demo/meshcfo-control-tower-demo.mp4) · [release v0.1.0-demo](https://github.com/Cubiczan/meshcfo-control-tower/releases/tag/v0.1.0-demo)
+- **Mirror (icohangar-ops):** [meshcfo-control-tower-demo.mp4](https://github.com/icohangar-ops/meshcfo-control-tower/releases/download/v0.1.0-demo/meshcfo-control-tower-demo.mp4)
+- Shot notes: [`docs/demo/README.md`](docs/demo/README.md) · script: [`DEMO.md`](DEMO.md)
 
-If the MP4 is not attached yet, the release tag is the placeholder — another agent is cutting and pushing the file.
+Live path shown: **NVIDIA Nemotron 3 Nano** (`nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B`) on **Nebius Token Factory**.
 
----
 
 ## 1. The problem
 
