@@ -4,6 +4,10 @@
 **Product:** Cubiczan MeshCFO Control Tower  
 **Must say on camera:** NVIDIA Nemotron + Nebius Token Factory
 
+**Published video (Release v0.1.0-demo):**
+[`meshcfo-control-tower-demo.mp4`](https://github.com/Cubiczan/meshcfo-control-tower/releases/download/v0.1.0-demo/meshcfo-control-tower-demo.mp4)
+· [release page](https://github.com/Cubiczan/meshcfo-control-tower/releases/tag/v0.1.0-demo)
+
 Record in 1080p. Show the terminal first, then the Streamlit tower. Do not present DEMO issuers as real companies — say “demo fixture” every time you name one.
 
 ---

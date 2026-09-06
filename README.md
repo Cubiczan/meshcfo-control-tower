@@ -13,6 +13,17 @@ This is MeshCFO-style **ownership**, not a chat window that invents advice.
 
 ---
 
+## Demo video
+
+≤ 3 minute walkthrough for Devpost judges (Nebius Token Factory + NVIDIA Nemotron on camera).
+
+- **Release:** [v0.1.0-demo](https://github.com/Cubiczan/meshcfo-control-tower/releases/tag/v0.1.0-demo)
+- **Asset:** [`meshcfo-control-tower-demo.mp4`](https://github.com/Cubiczan/meshcfo-control-tower/releases/download/v0.1.0-demo/meshcfo-control-tower-demo.mp4)
+
+If the MP4 is not attached yet, the release tag is the placeholder — another agent is cutting and pushing the file. Shot list and voiceover: [`DEMO.md`](DEMO.md).
+
+---
+
 ## Why this exists
 
 An 8-K Item 4.02 or a 10-K Item 9A is not a blog post. It is a **clock**: non-reliance, restatement measurement, 302/404 certifications, Audit Committee narrative, and a material weakness that will still be there next year if nobody owns the evidence.
