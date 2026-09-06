@@ -87,9 +87,15 @@ with st.sidebar:
         "3. Open *Per-claim provenance*  \n"
         "4. Confirm CHP lock ≠ free-form chat"
     )
+    st.caption("MIT · Cubiczan · Not legal, audit, or investment advice.")
 
 if "brief" not in st.session_state:
-    st.session_state.brief = None
+    with st.spinner("Loading DEMO brief…"):
+        st.session_state.brief = run_brief(
+            fixture_id,
+            offline=offline,
+            use_market=False,
+        )
 
 if run:
     with st.spinner("Running MeshCFO agent mesh…"):
@@ -127,6 +133,12 @@ with right:
 if brief is None:
     st.info("Select a DEMO fixture and generate a brief. Live mode uses NVIDIA Nemotron on Nebius Token Factory.")
     st.stop()
+
+if brief.signal.fixture_id != fixture_id:
+    st.warning(
+        f"Showing the brief for `{brief.signal.fixture_id}`. "
+        "Click Generate to refresh for the DEMO issuer selected in the sidebar."
+    )
 
 def _chip(label: str, value: str) -> str:
     return (
@@ -225,3 +237,10 @@ with st.expander("Agent pipeline"):
 
 with st.expander("JSON brief (CLI-equivalent)"):
     st.code(brief.model_dump_json(indent=2), language="json")
+
+st.markdown(
+    "<div class='small' style='margin-top:1.2rem'>Cubiczan MeshCFO Control Tower · MIT · "
+    "NVIDIA Nemotron on Nebius Token Factory · DEMO fixtures are not real SEC registrants · "
+    "Per-claim provenance is not a legal, audit, or investment opinion.</div>",
+    unsafe_allow_html=True,
+)

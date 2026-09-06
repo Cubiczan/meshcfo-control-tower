@@ -195,6 +195,7 @@ meshcfo-brief --fixture northstar
 
 # Same schema, no API key
 meshcfo-brief --fixture lumenbridge --offline --no-market
+./scripts/demo.sh northstar
 
 meshcfo-brief --list
 ```
@@ -264,7 +265,7 @@ Also in the fixture: ASC 606 bill-and-hold cutoff errors and a preliminary **mat
 
 ### Output (`meshcfo-brief --fixture northstar --offline`)
 
-Abbreviated; the CLI prints the full schema.
+Full frozen snapshot (visible on the default branch): [`examples/northstar-brief.offline.json`](examples/northstar-brief.offline.json). Abbreviated here:
 
 ```json
 {

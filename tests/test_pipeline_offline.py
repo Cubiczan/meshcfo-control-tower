@@ -1,5 +1,10 @@
+from pathlib import Path
+
 from meshcfo_control_tower.cli import main
 from meshcfo_control_tower.pipeline import run_brief
+from meshcfo_control_tower.schemas import RemediationBrief
+
+REPO_ROOT = Path(__file__).resolve().parents[1]
 
 
 def test_northstar_offline_brief():
@@ -45,6 +50,16 @@ def test_validator_locks(monkeypatch, tmp_path):
         lock_validator="demo_operator",
     )
     assert brief.lock_state == "LOCKED"
+
+
+def test_committed_example_brief_validates():
+    payload = (REPO_ROOT / "examples" / "northstar-brief.offline.json").read_text(encoding="utf-8")
+    brief = RemediationBrief.model_validate_json(payload)
+    assert brief.brand == "Cubiczan"
+    assert brief.demo is True
+    assert brief.company.ticker == "NSMT-DEMO"
+    assert brief.lock_state == "PROVISIONAL_LOCK"
+    assert brief.chp.r0_passed is True
 
 
 def test_cli_prints_json(capsys, monkeypatch, tmp_path):
