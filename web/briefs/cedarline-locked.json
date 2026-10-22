@@ -1,0 +1,454 @@
+{
+  "brief_id": "brf_a41e5eba35",
+  "generated_at": "2026-10-22T01:21:18+00:00",
+  "demo": true,
+  "brand": "Cubiczan",
+  "product": "MeshCFO Control Tower",
+  "company": {
+    "display_name": "Cedarline Health Partners (DEMO)",
+    "ticker": "CDLH-DEMO",
+    "cik": "0000000003-DEMO",
+    "demo": true,
+    "industry": "Outpatient clinic operator (demo)"
+  },
+  "signal": {
+    "fixture_id": "cedarline",
+    "signal_kind": "both",
+    "forms": [
+      "8-K",
+      "10-K"
+    ],
+    "filed_on": "2026-01-22",
+    "period_end": "2025-12-31",
+    "headline": "Cedarline Health Partners (DEMO): non-reliance / restatement signal with an ICFR material-weakness disclosure (DEMO)."
+  },
+  "why_now": {
+    "urgency": "immediate",
+    "regulatory_clock": "Immediate: non-reliance + restatement mechanics (amend prior periods, refresh 302/404 certifications, update Item 9A) before the next 10-Q/10-K.",
+    "triggers": [
+      {
+        "claim_id": "clm_28a091a650",
+        "text": "Why now: Item 4.02-style non-reliance starts an amendment and investor-communication clock before the next periodic report.",
+        "epistemic": "verified",
+        "agent": "why_now",
+        "expansion_step": "compress:regulatory-clock",
+        "grounding_source_ids": [
+          "cdlh-8k-402-p1",
+          "meta-cedarline"
+        ],
+        "chp_finding": null,
+        "confidence": "high"
+      },
+      {
+        "claim_id": "clm_98fa314fbf",
+        "text": "Fixture why-now fact: Non-reliance on prior audited 10-K plus inventory estimate MW heading into next 10-K",
+        "epistemic": "verified",
+        "agent": "why_now",
+        "expansion_step": "expand:fixture-fact",
+        "grounding_source_ids": [
+          "meta-cedarline"
+        ],
+        "chp_finding": null,
+        "confidence": "high"
+      }
+    ]
+  },
+  "buyer_seats": [
+    {
+      "seat": "CFO",
+      "raci": "A",
+      "accountable_for": "ICFR conclusion, 302/404 certifications, investor-facing restatement narrative",
+      "named_role": "Chief Financial Officer",
+      "process_area": "entity"
+    },
+    {
+      "seat": "Audit Committee",
+      "raci": "I",
+      "accountable_for": "Oversight of non-reliance, MW remediation status, and external-auditor communications",
+      "named_role": "Audit Committee Chair (oversight, not management)",
+      "process_area": "governance"
+    },
+    {
+      "seat": "Internal Audit",
+      "raci": "R",
+      "accountable_for": "Independent testing of remediated controls and evidence quality",
+      "named_role": "Chief Audit Executive / SOX testing lead",
+      "process_area": "assurance"
+    },
+    {
+      "seat": "SOX PMO",
+      "raci": "R",
+      "accountable_for": "Control matrix, RCMs, deficiency tracking, and status to AC",
+      "named_role": "SOX / ICFR program manager",
+      "process_area": "program"
+    },
+    {
+      "seat": "Controller",
+      "raci": "R",
+      "accountable_for": "NRV / obsolescence policy and restatement measurement",
+      "named_role": "Corporate Controller",
+      "process_area": "inventory_reserves"
+    },
+    {
+      "seat": "Process Owner",
+      "raci": "R",
+      "accountable_for": "Cycle counts, expiry reporting, and reserve trigger inputs",
+      "named_role": "Supply chain / clinic operations process owner",
+      "process_area": "inventory_reserves"
+    }
+  ],
+  "icfr_gaps": [
+    {
+      "gap_id": "gap_f52a87dfcf",
+      "coso_component": "Risk Assessment",
+      "process": "Inventory existence and obsolescence / NRV reserves",
+      "deficiency_type": "both",
+      "severity": "material_weakness",
+      "summary": "Obsolescence triggers and NRV estimates did not operate at period end.",
+      "claim": {
+        "claim_id": "clm_d3ea7d72b8",
+        "text": "ICFR gap: inventory existence and obsolescence/NRV estimate controls did not identify supplies approaching expiry carried above net realizable value.",
+        "epistemic": "verified",
+        "agent": "icfr",
+        "expansion_step": "expand:inventory-nrv",
+        "grounding_source_ids": [
+          "cdlh-8k-402-p2",
+          "cdlh-10k-9a-p1"
+        ],
+        "chp_finding": null,
+        "confidence": "high"
+      },
+      "compensating_controls": []
+    },
+    {
+      "gap_id": "gap_3ad5c622f6",
+      "coso_component": "Monitoring",
+      "process": "Period-end close / disclosure controls",
+      "deficiency_type": "operating",
+      "severity": "material_weakness",
+      "summary": "Close and disclosure reviews did not escalate the error class into Item 9A / 4.02 in time.",
+      "claim": {
+        "claim_id": "clm_2b4d3f4309",
+        "text": "ICFR gap: period-end close and disclosure-control reviews did not surface the error class in time to prevent a non-reliance or adverse ICFR conclusion.",
+        "epistemic": "inferred",
+        "agent": "icfr",
+        "expansion_step": "expand:close",
+        "grounding_source_ids": [
+          "cdlh-8k-402-p1",
+          "coso-icfr"
+        ],
+        "chp_finding": null,
+        "confidence": "medium"
+      },
+      "compensating_controls": []
+    }
+  ],
+  "next_actions": [
+    {
+      "action_id": "act_bcf1994f5d",
+      "owner_seat": "Controller",
+      "action": "Measure restatement entries for the non-reliance periods and draft the amended MD&A / footnote package.",
+      "due": "10 business days",
+      "evidence_required": "Restatement bridge, journal entries, and disclosure draft cross-referenced to excerpts",
+      "claim": {
+        "claim_id": "clm_b11c1b9af4",
+        "text": "Next action: quantify restated periods and prepare the amendment package before the next periodic report.",
+        "epistemic": "verified",
+        "agent": "ownership",
+        "expansion_step": "compress:actions",
+        "grounding_source_ids": [
+          "cdlh-8k-402-p1",
+          "meshcfo-raci"
+        ],
+        "chp_finding": null,
+        "confidence": "high"
+      }
+    },
+    {
+      "action_id": "act_89d1f96d62",
+      "owner_seat": "Process Owner",
+      "action": "Complete a wall-to-wall count of specialty supplies and apply expiry-based NRV triggers.",
+      "due": "15 business days",
+      "evidence_required": "Count sheets, expiry extract, NRV calculation, and reserve journal",
+      "claim": {
+        "claim_id": "clm_2583534367",
+        "text": "Next action: re-measure inventory at NRV and install expiry triggers in the close calendar.",
+        "epistemic": "verified",
+        "agent": "ownership",
+        "expansion_step": "compress:actions",
+        "grounding_source_ids": [
+          "cdlh-8k-402-p2",
+          "meshcfo-raci"
+        ],
+        "chp_finding": null,
+        "confidence": "high"
+      }
+    },
+    {
+      "action_id": "act_64c67a4047",
+      "owner_seat": "CFO",
+      "action": "Refresh SOX 302/404 certification package and the Audit Committee MW/restatement status memo.",
+      "due": "This reporting cycle",
+      "evidence_required": "Updated sub-certifications, Item 9A draft, AC minutes placeholder",
+      "claim": {
+        "claim_id": "clm_9f3fc1a2bb",
+        "text": "Next action: CFO owns the certification and AC narrative; this is not delegated advice.",
+        "epistemic": "verified",
+        "agent": "ownership",
+        "expansion_step": "compress:actions",
+        "grounding_source_ids": [
+          "meshcfo-raci",
+          "meta-cedarline"
+        ],
+        "chp_finding": null,
+        "confidence": "high"
+      }
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "clm_28a091a650",
+      "text": "Why now: Item 4.02-style non-reliance starts an amendment and investor-communication clock before the next periodic report.",
+      "epistemic": "verified",
+      "agent": "why_now",
+      "expansion_step": "compress:regulatory-clock",
+      "grounding_source_ids": [
+        "cdlh-8k-402-p1",
+        "meta-cedarline"
+      ],
+      "chp_finding": null,
+      "confidence": "high"
+    },
+    {
+      "claim_id": "clm_98fa314fbf",
+      "text": "Fixture why-now fact: Non-reliance on prior audited 10-K plus inventory estimate MW heading into next 10-K",
+      "epistemic": "verified",
+      "agent": "why_now",
+      "expansion_step": "expand:fixture-fact",
+      "grounding_source_ids": [
+        "meta-cedarline"
+      ],
+      "chp_finding": null,
+      "confidence": "high"
+    },
+    {
+      "claim_id": "clm_d3ea7d72b8",
+      "text": "ICFR gap: inventory existence and obsolescence/NRV estimate controls did not identify supplies approaching expiry carried above net realizable value.",
+      "epistemic": "verified",
+      "agent": "icfr",
+      "expansion_step": "expand:inventory-nrv",
+      "grounding_source_ids": [
+        "cdlh-8k-402-p2",
+        "cdlh-10k-9a-p1"
+      ],
+      "chp_finding": null,
+      "confidence": "high"
+    },
+    {
+      "claim_id": "clm_2b4d3f4309",
+      "text": "ICFR gap: period-end close and disclosure-control reviews did not surface the error class in time to prevent a non-reliance or adverse ICFR conclusion.",
+      "epistemic": "inferred",
+      "agent": "icfr",
+      "expansion_step": "expand:close",
+      "grounding_source_ids": [
+        "cdlh-8k-402-p1",
+        "coso-icfr"
+      ],
+      "chp_finding": null,
+      "confidence": "medium"
+    },
+    {
+      "claim_id": "clm_b11c1b9af4",
+      "text": "Next action: quantify restated periods and prepare the amendment package before the next periodic report.",
+      "epistemic": "verified",
+      "agent": "ownership",
+      "expansion_step": "compress:actions",
+      "grounding_source_ids": [
+        "cdlh-8k-402-p1",
+        "meshcfo-raci"
+      ],
+      "chp_finding": null,
+      "confidence": "high"
+    },
+    {
+      "claim_id": "clm_2583534367",
+      "text": "Next action: re-measure inventory at NRV and install expiry triggers in the close calendar.",
+      "epistemic": "verified",
+      "agent": "ownership",
+      "expansion_step": "compress:actions",
+      "grounding_source_ids": [
+        "cdlh-8k-402-p2",
+        "meshcfo-raci"
+      ],
+      "chp_finding": null,
+      "confidence": "high"
+    },
+    {
+      "claim_id": "clm_9f3fc1a2bb",
+      "text": "Next action: CFO owns the certification and AC narrative; this is not delegated advice.",
+      "epistemic": "verified",
+      "agent": "ownership",
+      "expansion_step": "compress:actions",
+      "grounding_source_ids": [
+        "meshcfo-raci",
+        "meta-cedarline"
+      ],
+      "chp_finding": null,
+      "confidence": "high"
+    },
+    {
+      "claim_id": "clm_65f486804a",
+      "text": "Cedarline Health Partners (DEMO) is a labeled DEMO issuer (CDLH-DEMO); this is not a real SEC registrant.",
+      "epistemic": "verified",
+      "agent": "intake",
+      "expansion_step": "expand:identity",
+      "grounding_source_ids": [
+        "meta-cedarline"
+      ],
+      "chp_finding": null,
+      "confidence": "high"
+    },
+    {
+      "claim_id": "clm_17ce586332",
+      "text": "Audit Committee concluded prior financial statements should no longer be relied upon (FY2024 Form 10-K and FY2025 interim periods).",
+      "epistemic": "verified",
+      "agent": "intake",
+      "expansion_step": "expand:item-4.02",
+      "grounding_source_ids": [
+        "cdlh-8k-402-p1"
+      ],
+      "chp_finding": null,
+      "confidence": "high"
+    },
+    {
+      "claim_id": "clm_bd1b68f281",
+      "text": "Management disclosed a material weakness in ICFR: Controls over inventory existence, obsolescence triggers, and period-end reserve estimates.",
+      "epistemic": "verified",
+      "agent": "intake",
+      "expansion_step": "expand:item-9a",
+      "grounding_source_ids": [
+        "cdlh-10k-9a-p1"
+      ],
+      "chp_finding": null,
+      "confidence": "high"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "cdlh-8k-402-p1",
+      "kind": "edgar_excerpt",
+      "locator": "8-K Item 4.02 ¶1 (DEMO)",
+      "excerpt": "DEMO FILING TEXT — not a real EDGAR document. On January 16, 2026, the Audit Committee of Cedarline Health Partners (DEMO ISSUER) concluded that the Company's audited consolidated financial statements for the year ended December 31, 2024, and the related audit report, should no longer be relied upon.",
+      "demo_label": true
+    },
+    {
+      "source_id": "cdlh-8k-402-p2",
+      "kind": "edgar_excerpt",
+      "locator": "8-K Item 4.02 ¶2 (DEMO)",
+      "excerpt": "DEMO FILING TEXT. Certain specialty medical supplies approaching expiry were carried at cost. Subsequent physical counts and usage analyses indicated that net realizable value was below carrying value, understating cost of supplies and overstating inventory.",
+      "demo_label": true
+    },
+    {
+      "source_id": "cdlh-10k-9a-p1",
+      "kind": "edgar_excerpt",
+      "locator": "10-K Item 9A ¶1 (DEMO)",
+      "excerpt": "DEMO FILING TEXT. Management identified a material weakness in the design of controls over inventory existence and the operating effectiveness of controls that evaluate obsolescence triggers and period-end reserve estimates.",
+      "demo_label": true
+    },
+    {
+      "source_id": "meta-cedarline",
+      "kind": "fixture_metadata",
+      "locator": "DEMO fixture metadata:cedarline",
+      "excerpt": "DEMO ISSUER — fictional Cubiczan sample. Not an SEC registrant. Not a real company filing. restatement_periods=FY2024 Form 10-K and FY2025 interim periods; accounting_topic=Medical supply inventory obsolescence and NRV reserves; item_402=8-K Item 4.02 Non-Reliance on FY2024 audited financial statements; mw_area=Controls over inventory existence, obsolescence triggers, and period-end reserve estimates; why_now=Non-reliance on prior audited 10-K plus inventory estimate MW heading into next 10-K",
+      "demo_label": true
+    },
+    {
+      "source_id": "coso-icfr",
+      "kind": "coso_framework",
+      "locator": "COSO Internal Control — Integrated Framework (ICFR mapping playbook)",
+      "excerpt": "ICFR deficiencies are evaluated by COSO component and by whether the deficiency is design, operating, or both.",
+      "demo_label": true
+    },
+    {
+      "source_id": "meshcfo-raci",
+      "kind": "ownership_playbook",
+      "locator": "MeshCFO Control Tower ownership playbook",
+      "excerpt": "Buyer seats are CFO (A for certifications), Controller (R for close/policy), process owner (R for transaction evidence), Internal Audit (R for remediation testing), SOX PMO (R for matrix), Audit Committee (I/oversight), CIO/CISO (R for ITGC).",
+      "demo_label": true
+    }
+  ],
+  "chp": {
+    "foundation": [
+      "DEMO ISSUER — fictional Cubiczan sample. Not an SEC registrant. Not a real company filing.",
+      "Forms in fixture: 8-K, 10-K filed_on=2026-01-22 period_end=2025-12-31.",
+      "restatement_periods: FY2024 Form 10-K and FY2025 interim periods",
+      "accounting_topic: Medical supply inventory obsolescence and NRV reserves",
+      "item_402: 8-K Item 4.02 Non-Reliance on FY2024 audited financial statements",
+      "mw_area: Controls over inventory existence, obsolescence triggers, and period-end reserve estimates",
+      "why_now: Non-reliance on prior audited 10-K plus inventory estimate MW heading into next 10-K"
+    ],
+    "attacks": [
+      "Do not treat DEMO excerpts as facts about any real registrant.",
+      "Compensating controls mentioned in filings are often detective-only and do not reduce a MW to a SD without evidence.",
+      "Management 'has not identified a restatement to date' is not evidence that the control is effective."
+    ],
+    "r0_passed": true,
+    "r0_dropped_claim_ids": [],
+    "provenance_score": 1.0,
+    "lock_rationale": "LOCKED after third-party validation by demo-validator. R0 passed: every retained claim has a known source. LOCKED requires a named third-party validator."
+  },
+  "model": {
+    "provider": "Nebius Token Factory",
+    "base_url": "https://api.tokenfactory.nebius.com/v1/",
+    "model": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B",
+    "fallback_model": "nvidia/Nemotron-3_5-Lightning",
+    "mode": "offline",
+    "used_fallback": false
+  },
+  "lock_state": "LOCKED",
+  "pipeline": [
+    {
+      "ts": "2026-10-22T01:21:18+00:00",
+      "agent": "intake",
+      "phase": "expand",
+      "summary": "Loaded DEMO fixture and identity facts"
+    },
+    {
+      "ts": "2026-10-22T01:21:18+00:00",
+      "agent": "why_now",
+      "phase": "compress",
+      "summary": "Mapped filing items to a regulatory clock"
+    },
+    {
+      "ts": "2026-10-22T01:21:18+00:00",
+      "agent": "icfr",
+      "phase": "expand",
+      "summary": "Mapped excerpts to COSO / process gaps"
+    },
+    {
+      "ts": "2026-10-22T01:21:18+00:00",
+      "agent": "ownership",
+      "phase": "compress",
+      "summary": "Assigned MeshCFO buyer seats and RACI"
+    },
+    {
+      "ts": "2026-10-22T01:21:18+00:00",
+      "agent": "adversary",
+      "phase": "attack",
+      "summary": "CHP assumption attack on restatement/MW claims"
+    },
+    {
+      "ts": "2026-10-22T01:21:18+00:00",
+      "agent": "r0_gate",
+      "phase": "gate",
+      "summary": "lock_state=PROVISIONAL_LOCK score=1.0"
+    },
+    {
+      "ts": "2026-10-22T01:21:18+00:00",
+      "agent": "chp",
+      "phase": "gate",
+      "summary": "Validator demo-validator advanced lock to LOCKED"
+    }
+  ],
+  "market_context_note": null
+}

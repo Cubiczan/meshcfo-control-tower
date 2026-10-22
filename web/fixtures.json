@@ -1,0 +1,26 @@
+[
+  {
+    "fixture_id": "northstar",
+    "company": "Northstar Materials, Inc. (DEMO)",
+    "ticker": "NSMT-DEMO",
+    "signal_kind": "both",
+    "forms": "8-K, 10-Q",
+    "disclaimer": "DEMO ISSUER \u2014 fictional Cubiczan sample. Not an SEC registrant. Not a real company filing."
+  },
+  {
+    "fixture_id": "lumenbridge",
+    "company": "Lumenbridge Payments Corp. (DEMO)",
+    "ticker": "LMPC-DEMO",
+    "signal_kind": "material_weakness",
+    "forms": "10-K",
+    "disclaimer": "DEMO ISSUER \u2014 fictional Cubiczan sample. Not an SEC registrant. Not a real company filing."
+  },
+  {
+    "fixture_id": "cedarline",
+    "company": "Cedarline Health Partners (DEMO)",
+    "ticker": "CDLH-DEMO",
+    "signal_kind": "both",
+    "forms": "8-K, 10-K",
+    "disclaimer": "DEMO ISSUER \u2014 fictional Cubiczan sample. Not an SEC registrant. Not a real company filing."
+  }
+]

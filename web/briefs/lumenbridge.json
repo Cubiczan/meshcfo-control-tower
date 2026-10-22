@@ -1,0 +1,435 @@
+{
+  "brief_id": "brf_9e8ede6775",
+  "generated_at": "2026-10-22T01:21:18+00:00",
+  "demo": true,
+  "brand": "Cubiczan",
+  "product": "MeshCFO Control Tower",
+  "company": {
+    "display_name": "Lumenbridge Payments Corp. (DEMO)",
+    "ticker": "LMPC-DEMO",
+    "cik": "0000000002-DEMO",
+    "demo": true,
+    "industry": "Payment facilitation / fintech (demo)"
+  },
+  "signal": {
+    "fixture_id": "lumenbridge",
+    "signal_kind": "material_weakness",
+    "forms": [
+      "10-K"
+    ],
+    "filed_on": "2026-02-28",
+    "period_end": "2025-12-31",
+    "headline": "Lumenbridge Payments Corp. (DEMO): Item 9A-style material weakness without a restatement to date (DEMO)."
+  },
+  "why_now": {
+    "urgency": "this_quarter",
+    "regulatory_clock": "This quarter: design/operate ITGC remediation and IA testing so the next Item 9A can describe progress rather than an open MW.",
+    "triggers": [
+      {
+        "claim_id": "clm_6a2cf290de",
+        "text": "Why now: first disclosed MW in an annual ICFR opinion year after a platform cutover; remediation evidence is needed for the next cycle.",
+        "epistemic": "inferred",
+        "agent": "why_now",
+        "expansion_step": "compress:regulatory-clock",
+        "grounding_source_ids": [
+          "lmpc-10k-9a-p1",
+          "meta-lumenbridge"
+        ],
+        "chp_finding": null,
+        "confidence": "medium"
+      },
+      {
+        "claim_id": "clm_9cbc2f4a00",
+        "text": "Fixture why-now fact: First annual ICFR opinion year after platform cutover; Item 9A MW disclosed",
+        "epistemic": "verified",
+        "agent": "why_now",
+        "expansion_step": "expand:fixture-fact",
+        "grounding_source_ids": [
+          "meta-lumenbridge"
+        ],
+        "chp_finding": null,
+        "confidence": "high"
+      }
+    ]
+  },
+  "buyer_seats": [
+    {
+      "seat": "CFO",
+      "raci": "A",
+      "accountable_for": "ICFR conclusion, 302/404 certifications, investor-facing restatement narrative",
+      "named_role": "Chief Financial Officer",
+      "process_area": "entity"
+    },
+    {
+      "seat": "Audit Committee",
+      "raci": "I",
+      "accountable_for": "Oversight of non-reliance, MW remediation status, and external-auditor communications",
+      "named_role": "Audit Committee Chair (oversight, not management)",
+      "process_area": "governance"
+    },
+    {
+      "seat": "Internal Audit",
+      "raci": "R",
+      "accountable_for": "Independent testing of remediated controls and evidence quality",
+      "named_role": "Chief Audit Executive / SOX testing lead",
+      "process_area": "assurance"
+    },
+    {
+      "seat": "SOX PMO",
+      "raci": "R",
+      "accountable_for": "Control matrix, RCMs, deficiency tracking, and status to AC",
+      "named_role": "SOX / ICFR program manager",
+      "process_area": "program"
+    },
+    {
+      "seat": "CIO/CISO",
+      "raci": "R",
+      "accountable_for": "Privileged access recertification, SOD, emergency-change review",
+      "named_role": "CIO / CISO (ITGC owner)",
+      "process_area": "itgc_access"
+    },
+    {
+      "seat": "Controller",
+      "raci": "C",
+      "accountable_for": "Business-side SOD and settlement-adjustment approval design",
+      "named_role": "Corporate Controller",
+      "process_area": "itgc_access"
+    }
+  ],
+  "icfr_gaps": [
+    {
+      "gap_id": "gap_db565de667",
+      "coso_component": "Control Activities",
+      "process": "ITGC — privileged access, SOD, change management",
+      "deficiency_type": "both",
+      "severity": "material_weakness",
+      "summary": "Privileged and SOD-conflicting access plus unreviewed emergency changes over the payments ledger.",
+      "claim": {
+        "claim_id": "clm_234fbb3b80",
+        "text": "ICFR gap: ITGCs over the payments ledger failed — lingering developer production access, initiate/approve SOD conflicts, and emergency changes without independent review.",
+        "epistemic": "verified",
+        "agent": "icfr",
+        "expansion_step": "expand:itgc",
+        "grounding_source_ids": [
+          "lmpc-10k-9a-p2",
+          "lmpc-10k-9a-p3"
+        ],
+        "chp_finding": null,
+        "confidence": "high"
+      },
+      "compensating_controls": []
+    },
+    {
+      "gap_id": "gap_d6fd4b916b",
+      "coso_component": "Monitoring",
+      "process": "Period-end close / disclosure controls",
+      "deficiency_type": "operating",
+      "severity": "material_weakness",
+      "summary": "Close and disclosure reviews did not escalate the error class into Item 9A / 4.02 in time.",
+      "claim": {
+        "claim_id": "clm_3841025d84",
+        "text": "ICFR gap: period-end close and disclosure-control reviews did not surface the error class in time to prevent a non-reliance or adverse ICFR conclusion.",
+        "epistemic": "inferred",
+        "agent": "icfr",
+        "expansion_step": "expand:close",
+        "grounding_source_ids": [
+          "lmpc-10k-9a-p1",
+          "coso-icfr"
+        ],
+        "chp_finding": null,
+        "confidence": "medium"
+      },
+      "compensating_controls": []
+    }
+  ],
+  "next_actions": [
+    {
+      "action_id": "act_83761168eb",
+      "owner_seat": "CIO/CISO",
+      "action": "Revoke leftover developer production access, recertify privileged users, and break initiate/approve SOD on settlement adjustments.",
+      "due": "5 business days",
+      "evidence_required": "Access recertification file, SOD exceptions closed, emergency-change review log",
+      "claim": {
+        "claim_id": "clm_51b05832de",
+        "text": "Next action: close ITGC access and SOD gaps created in the Q3 ledger cutover.",
+        "epistemic": "verified",
+        "agent": "ownership",
+        "expansion_step": "compress:actions",
+        "grounding_source_ids": [
+          "lmpc-10k-9a-p2",
+          "meshcfo-raci"
+        ],
+        "chp_finding": null,
+        "confidence": "high"
+      }
+    },
+    {
+      "action_id": "act_4e3d7ef594",
+      "owner_seat": "Internal Audit",
+      "action": "Test a population of emergency production changes and privileged-user activity since the cutover.",
+      "due": "20 business days",
+      "evidence_required": "IA workpapers with population, sample, exceptions, and residual-risk call",
+      "claim": {
+        "claim_id": "clm_61925dfece",
+        "text": "Next action: IA must independently test ITGC remediation — management assertion is not enough.",
+        "epistemic": "verified",
+        "agent": "ownership",
+        "expansion_step": "compress:actions",
+        "grounding_source_ids": [
+          "lmpc-10k-9a-p3",
+          "meshcfo-raci"
+        ],
+        "chp_finding": null,
+        "confidence": "high"
+      }
+    },
+    {
+      "action_id": "act_33c96fd461",
+      "owner_seat": "CFO",
+      "action": "Refresh SOX 302/404 certification package and the Audit Committee MW/restatement status memo.",
+      "due": "This reporting cycle",
+      "evidence_required": "Updated sub-certifications, Item 9A draft, AC minutes placeholder",
+      "claim": {
+        "claim_id": "clm_2261f7e68b",
+        "text": "Next action: CFO owns the certification and AC narrative; this is not delegated advice.",
+        "epistemic": "verified",
+        "agent": "ownership",
+        "expansion_step": "compress:actions",
+        "grounding_source_ids": [
+          "meshcfo-raci",
+          "meta-lumenbridge"
+        ],
+        "chp_finding": null,
+        "confidence": "high"
+      }
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "clm_6a2cf290de",
+      "text": "Why now: first disclosed MW in an annual ICFR opinion year after a platform cutover; remediation evidence is needed for the next cycle.",
+      "epistemic": "inferred",
+      "agent": "why_now",
+      "expansion_step": "compress:regulatory-clock",
+      "grounding_source_ids": [
+        "lmpc-10k-9a-p1",
+        "meta-lumenbridge"
+      ],
+      "chp_finding": null,
+      "confidence": "medium"
+    },
+    {
+      "claim_id": "clm_9cbc2f4a00",
+      "text": "Fixture why-now fact: First annual ICFR opinion year after platform cutover; Item 9A MW disclosed",
+      "epistemic": "verified",
+      "agent": "why_now",
+      "expansion_step": "expand:fixture-fact",
+      "grounding_source_ids": [
+        "meta-lumenbridge"
+      ],
+      "chp_finding": null,
+      "confidence": "high"
+    },
+    {
+      "claim_id": "clm_234fbb3b80",
+      "text": "ICFR gap: ITGCs over the payments ledger failed — lingering developer production access, initiate/approve SOD conflicts, and emergency changes without independent review.",
+      "epistemic": "verified",
+      "agent": "icfr",
+      "expansion_step": "expand:itgc",
+      "grounding_source_ids": [
+        "lmpc-10k-9a-p2",
+        "lmpc-10k-9a-p3"
+      ],
+      "chp_finding": null,
+      "confidence": "high"
+    },
+    {
+      "claim_id": "clm_3841025d84",
+      "text": "ICFR gap: period-end close and disclosure-control reviews did not surface the error class in time to prevent a non-reliance or adverse ICFR conclusion.",
+      "epistemic": "inferred",
+      "agent": "icfr",
+      "expansion_step": "expand:close",
+      "grounding_source_ids": [
+        "lmpc-10k-9a-p1",
+        "coso-icfr"
+      ],
+      "chp_finding": null,
+      "confidence": "medium"
+    },
+    {
+      "claim_id": "clm_51b05832de",
+      "text": "Next action: close ITGC access and SOD gaps created in the Q3 ledger cutover.",
+      "epistemic": "verified",
+      "agent": "ownership",
+      "expansion_step": "compress:actions",
+      "grounding_source_ids": [
+        "lmpc-10k-9a-p2",
+        "meshcfo-raci"
+      ],
+      "chp_finding": null,
+      "confidence": "high"
+    },
+    {
+      "claim_id": "clm_61925dfece",
+      "text": "Next action: IA must independently test ITGC remediation — management assertion is not enough.",
+      "epistemic": "verified",
+      "agent": "ownership",
+      "expansion_step": "compress:actions",
+      "grounding_source_ids": [
+        "lmpc-10k-9a-p3",
+        "meshcfo-raci"
+      ],
+      "chp_finding": null,
+      "confidence": "high"
+    },
+    {
+      "claim_id": "clm_2261f7e68b",
+      "text": "Next action: CFO owns the certification and AC narrative; this is not delegated advice.",
+      "epistemic": "verified",
+      "agent": "ownership",
+      "expansion_step": "compress:actions",
+      "grounding_source_ids": [
+        "meshcfo-raci",
+        "meta-lumenbridge"
+      ],
+      "chp_finding": null,
+      "confidence": "high"
+    },
+    {
+      "claim_id": "clm_311a583fe7",
+      "text": "Lumenbridge Payments Corp. (DEMO) is a labeled DEMO issuer (LMPC-DEMO); this is not a real SEC registrant.",
+      "epistemic": "verified",
+      "agent": "intake",
+      "expansion_step": "expand:identity",
+      "grounding_source_ids": [
+        "meta-lumenbridge"
+      ],
+      "chp_finding": null,
+      "confidence": "high"
+    },
+    {
+      "claim_id": "clm_21896ce9f9",
+      "text": "Management disclosed a material weakness in ICFR: IT general controls — privileged access, segregation of duties, and change management over the payments ledger.",
+      "epistemic": "verified",
+      "agent": "intake",
+      "expansion_step": "expand:item-9a",
+      "grounding_source_ids": [
+        "lmpc-10k-9a-p1"
+      ],
+      "chp_finding": null,
+      "confidence": "high"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "lmpc-10k-9a-p1",
+      "kind": "edgar_excerpt",
+      "locator": "10-K Item 9A ¶1 (DEMO)",
+      "excerpt": "DEMO FILING TEXT — not a real EDGAR document. Management of Lumenbridge Payments Corp. (DEMO ISSUER) concluded that internal control over financial reporting was not effective as of December 31, 2025 because of a material weakness in IT general controls supporting the payments ledger.",
+      "demo_label": true
+    },
+    {
+      "source_id": "lmpc-10k-9a-p2",
+      "kind": "edgar_excerpt",
+      "locator": "10-K Item 9A ¶2 (DEMO)",
+      "excerpt": "DEMO FILING TEXT. Privileged access to production was granted to developers during the Q3 platform cutover and was not recertified. Several users retained combined access to initiate and approve journal-equivalent settlement adjustments.",
+      "demo_label": true
+    },
+    {
+      "source_id": "lmpc-10k-9a-p3",
+      "kind": "edgar_excerpt",
+      "locator": "10-K Item 9A ¶3 (DEMO)",
+      "excerpt": "DEMO FILING TEXT. Change-management controls did not require independent review of emergency production changes. Management stated that it has not identified a restatement to date, but the deficiencies could result in a material misstatement of settlement revenue or merchant liability that would not be prevented or detected on a timely basis.",
+      "demo_label": true
+    },
+    {
+      "source_id": "meta-lumenbridge",
+      "kind": "fixture_metadata",
+      "locator": "DEMO fixture metadata:lumenbridge",
+      "excerpt": "DEMO ISSUER — fictional Cubiczan sample. Not an SEC registrant. Not a real company filing. mw_area=IT general controls — privileged access, segregation of duties, and change management over the payments ledger; first_year_sox=true; erp_cutover=Ledger platform cutover in FY2025 Q3; why_now=First annual ICFR opinion year after platform cutover; Item 9A MW disclosed",
+      "demo_label": true
+    },
+    {
+      "source_id": "coso-icfr",
+      "kind": "coso_framework",
+      "locator": "COSO Internal Control — Integrated Framework (ICFR mapping playbook)",
+      "excerpt": "ICFR deficiencies are evaluated by COSO component and by whether the deficiency is design, operating, or both.",
+      "demo_label": true
+    },
+    {
+      "source_id": "meshcfo-raci",
+      "kind": "ownership_playbook",
+      "locator": "MeshCFO Control Tower ownership playbook",
+      "excerpt": "Buyer seats are CFO (A for certifications), Controller (R for close/policy), process owner (R for transaction evidence), Internal Audit (R for remediation testing), SOX PMO (R for matrix), Audit Committee (I/oversight), CIO/CISO (R for ITGC).",
+      "demo_label": true
+    }
+  ],
+  "chp": {
+    "foundation": [
+      "DEMO ISSUER — fictional Cubiczan sample. Not an SEC registrant. Not a real company filing.",
+      "Forms in fixture: 10-K filed_on=2026-02-28 period_end=2025-12-31.",
+      "mw_area: IT general controls — privileged access, segregation of duties, and change management over the payments ledger",
+      "first_year_sox: true",
+      "erp_cutover: Ledger platform cutover in FY2025 Q3",
+      "why_now: First annual ICFR opinion year after platform cutover; Item 9A MW disclosed"
+    ],
+    "attacks": [
+      "Do not treat DEMO excerpts as facts about any real registrant.",
+      "Compensating controls mentioned in filings are often detective-only and do not reduce a MW to a SD without evidence.",
+      "Management 'has not identified a restatement to date' is not evidence that the control is effective.",
+      "Access recertification without a joiner/mover/leaver redesign typically re-opens the MW next period."
+    ],
+    "r0_passed": true,
+    "r0_dropped_claim_ids": [],
+    "provenance_score": 1.0,
+    "lock_rationale": "R0 passed: every retained claim has a known source. LOCKED requires a named third-party validator."
+  },
+  "model": {
+    "provider": "Nebius Token Factory",
+    "base_url": "https://api.tokenfactory.nebius.com/v1/",
+    "model": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B",
+    "fallback_model": "nvidia/Nemotron-3_5-Lightning",
+    "mode": "offline",
+    "used_fallback": false
+  },
+  "lock_state": "PROVISIONAL_LOCK",
+  "pipeline": [
+    {
+      "ts": "2026-10-22T01:21:18+00:00",
+      "agent": "intake",
+      "phase": "expand",
+      "summary": "Loaded DEMO fixture and identity facts"
+    },
+    {
+      "ts": "2026-10-22T01:21:18+00:00",
+      "agent": "why_now",
+      "phase": "compress",
+      "summary": "Mapped filing items to a regulatory clock"
+    },
+    {
+      "ts": "2026-10-22T01:21:18+00:00",
+      "agent": "icfr",
+      "phase": "expand",
+      "summary": "Mapped excerpts to COSO / process gaps"
+    },
+    {
+      "ts": "2026-10-22T01:21:18+00:00",
+      "agent": "ownership",
+      "phase": "compress",
+      "summary": "Assigned MeshCFO buyer seats and RACI"
+    },
+    {
+      "ts": "2026-10-22T01:21:18+00:00",
+      "agent": "adversary",
+      "phase": "attack",
+      "summary": "CHP assumption attack on restatement/MW claims"
+    },
+    {
+      "ts": "2026-10-22T01:21:18+00:00",
+      "agent": "r0_gate",
+      "phase": "gate",
+      "summary": "lock_state=PROVISIONAL_LOCK score=1.0"
+    }
+  ],
+  "market_context_note": null
+}
